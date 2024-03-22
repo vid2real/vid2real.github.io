@@ -29,7 +29,8 @@
   <style>
     .project-card img {
       height: 200px;
-      object-fit: cover;
+      width: auto;
+      object-fit: scale-down;
     }
 
     .person-image img {
@@ -37,6 +38,28 @@
       width: 128px;
       border-radius: 50%;
       object-fit: cover;
+    }
+
+    .custom-flex-card .card-content-wrapper {
+      display: flex;
+      align-items: flex-start;
+      /* Align items at the start of the flex container */
+    }
+
+    .custom-card-image {
+      flex: 1;
+      /* Adjust based on your preference, controls the image width */
+      display: block;
+      position: relative;
+    }
+
+    .custom-card-content {
+      flex: 2;
+      /* Adjust based on your preference, controls the content width */
+      background-color: transparent;
+      padding: 1.5rem;
+      padding-left: 20px;
+      /* Adds some space between the image and the text */
     }
   </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -87,8 +110,8 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
             <h1 class="title is-1 publication-title">Vid2Real</h1>
-            <h2 class="subtitle">A Human-Robot Encounters (HRE) Research Initiative</h2>
-            <h3 class="subtitle"><span class="dnerf">Vid2Real</span> is a <i>Human-Robot Encounters (HRE)</i> research
+            <h2 class="subtitle"><b><i>A Human-Robot Encounters (HRE) Research Initiative</i></b></h2>
+            <h3 class="subtitle"><span class="dnerf">Vid2Real</span> is a Human-Robot Encounters (HRE) research
               initiative at UT Austin, as part of a larger Growing Convergence Research (GCR) group funded by the NSF
             </h3>
           </div>
@@ -101,11 +124,11 @@
     <div class="container is-max-desktop">
       <h1 class="title is-3">Projects</h1>
       <div class="columns is-multiline">
-        <!-- Project 1 -->
-        <div class="column is-full-width">
+        <!-- Project Format for top image -->
+        <!-- <div class="column is-full-width">
           <div class="card project-card">
             <div class="card-image">
-              <figure class="image is-4by3 is-hoverable">
+              <figure class="image is-one-third is-hoverable">
                 <img src="static/images/vid2real_hri_logo.png" alt="Vid2RealHRI framework">
               </figure>
             </div>
@@ -120,7 +143,36 @@
                   feasibility and effectiveness. We proposed <span class="dnerf">Vid2RealHRI</span>, a
                   research framework to maximize real-world insights offered by
                   video-based studies.</p>
-                <!-- <a href="#">Learn more</a> -->
+              </div>
+            </div>
+            <footer class="card-footer">
+              <a href="https://vid2real.github.io/vid2realHRI/" class="card-footer-item">Read More</a>
+            </footer>
+          </div>
+        </div> -->
+        <!-- Project Format for top image -->
+
+        <!-- Project 1 -->
+        <div class="column is-full-width">
+          <div class="card project-card custom-flex-card">
+            <div class="card-content-wrapper">
+              <div class="custom-card-image">
+                <figure class="image is-one-third is-hoverable">
+                  <img src="static/images/vid2real_hri_logo.png" alt="Vid2RealHRI framework">
+                </figure>
+              </div>
+              <div class="card-content custom-card-content">
+                <div class="content">
+                  <h3>Vid2RealHRI</h3>
+                  <p class="subtitle">Align video-based HRI study designs with real-world
+                    settings</p>
+                  <p>HRI research using autonomous robots in real-world
+                    settings can produce results with the highest ecological validity
+                    of any study modality, but many difficulties limit such studies'
+                    feasibility and effectiveness. We proposed <span class="dnerf">Vid2RealHRI</span>, a
+                    research framework to maximize real-world insights offered by
+                    video-based studies.</p>
+                </div>
               </div>
             </div>
             <footer class="card-footer">
@@ -143,7 +195,9 @@
             <div class="person-image">
               <img src="static/images/elliott.png" alt="Elliot Hauser">
             </div>
-            <h3 class="title is-5" href="https://elliotthauser.com">Elliot Hauser</h3>
+            <a href="https://elliotthauser.com">
+              <h3 class="title is-5">Elliot Hauser</h3>
+            </a>
             <p>Assistant Professor, UT iSchool</p>
           </div>
         </div>
@@ -154,7 +208,9 @@
             <div class="person-image">
               <img src="static/images/joydeep.png" alt="Joydeep Biswas">
             </div>
-            <h3 class="title is-5" href="https://www.joydeepb.com">Joydeep Biswas</h3>
+            <a href="https://www.joydeepb.com">
+              <h3 class="title is-5">Joydeep Biswas</h3>
+            </a>
             <p>Associate Professor, UTCS</p>
           </div>
         </div>
@@ -165,7 +221,9 @@
             <div class="person-image">
               <img src="static/images/justin.png" alt="Justin Hart">
             </div>
-            <h3 class="title is-5" href="http://justinhart.net">Justin Hart</h3>
+            <a href="http://justinhart.net">
+              <h3 class="title is-5">Justin Hart</h3>
+            </a>
             <p>Assistant Professor of Practice, UTCS</p>
           </div>
         </div>
@@ -176,8 +234,9 @@
             <div class="person-image">
               <img src="static/images/sadanand.png" alt="Sadanand Modak">
             </div>
-            <h3 class="title is-5" href="https://www.semanticscholar.org/author/Sadanand-Modak/2274501520">Sadanand
-              Modak</h3>
+            <a href="https://www.semanticscholar.org/author/Sadanand-Modak/2274501520">
+              <h3 class="title is-5">Sadanand Modak</h3>
+            </a>
             <p>PhD 2nd year, UTCS</p>
           </div>
         </div>
@@ -188,8 +247,9 @@
             <div class="person-image">
               <img src="static/images/Yaochengchan.png" alt="Yao-Cheng Chan">
             </div>
-            <h3 class="title is-5" href="https://www.semanticscholar.org/author/Yao-Cheng-Chan/1818227389">Yao-Cheng
-              Chan</h3>
+            <a href="https://www.semanticscholar.org/author/Yao-Cheng-Chan/1818227389">
+              <h3 class="title is-5">Yao-Cheng Chan</h3>
+            </a>
             <p>PhD 4th year, UT iSchool</p>
           </div>
         </div>
@@ -199,9 +259,9 @@
   </section>
 
   <section class="section">
-    <div class="container">
-      <h1 class="title">Publications</h1>
-      <div class="content">
+    <div class="container is-max-desktop">
+      <h1 class="title is-3">Publications</h1>
+      <div class="columns column content">
         <ul>
           <li>Elliot Hauser, Yao-Cheng Chan, Sadanand Modak, Joydeep Biswas, Justin Hart. (2024). "Vid2RealHRI: Align
             video-based HRI study designs with real-world settings." <i>RO-MAN</i>, under review.</li>
