@@ -2,13 +2,12 @@
 <html lang="en">
 
 <head>
-  <meta charset="utf-8">
+  <meta charset="UTF-8">
   <meta name="description"
-    content="Vid2RealHRI effectively transfers insights from video-based study into the real-world.">
+    content="Vid2Real is a Human-Robot Encounters (HRE) research initiative at UT Austin, as part of a larger Growing Convergence Research (GCR) group funded by the NSF.">
   <meta name="keywords" content="Vid2Real, Vid2RealHRI, HRI, HRE, Encounters, Robotics, Autonomy">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Vid2RealHRI: Align video-based HRI study designs with real-world settings</title>
-
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vid2Real: A Human-Robot Encounters (HRE) Research Initiative</title>
   <!-- Google tag (gtag.js) -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-XLVQPX87CD"></script>
   <script>
@@ -18,7 +17,6 @@
 
     gtag('config', 'G-XLVQPX87CD');
   </script>
-
   <link href="https://fonts.googleapis.com/css?family=Google+Sans|Noto+Sans|Castoro" rel="stylesheet">
 
   <link rel="stylesheet" href="./static/css/bulma.min.css">
@@ -28,7 +26,19 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
   <link rel="stylesheet" href="./static/css/index.css">
   <link rel="icon" href="./static/images/favicon.svg">
+  <style>
+    .project-card img {
+      height: 200px;
+      object-fit: cover;
+    }
 
+    .person-image img {
+      height: 128px;
+      width: 128px;
+      border-radius: 50%;
+      object-fit: cover;
+    }
+  </style>
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script defer src="./static/js/fontawesome.all.min.js"></script>
   <script src="./static/js/bulma-carousel.min.js"></script>
@@ -71,334 +81,147 @@
     </div>
   </nav>
 
-
   <section class="hero">
     <div class="hero-body">
       <div class="container is-max-desktop">
         <div class="columns is-centered">
           <div class="column has-text-centered">
-            <h1 class="title is-1 publication-title">Vid2RealHRI: Align video-based HRI study designs with real-world
-              settings</h1>
-            <div class="is-size-5 publication-authors">
-              <span class="author-block">
-                <a href="https://elliotthauser.com">Elliott Hauser</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.semanticscholar.org/author/Yao-Cheng-Chan/1818227389">Yao-Cheng
-                  Chan</a><sup>1</sup>,</span>
-              <span class="author-block">
-                <a href="https://www.semanticscholar.org/author/Sadanand-Modak/2274501520">Sadanand
-                  Modak</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="https://www.joydeepb.com">Joydeep Biswas</a><sup>2</sup>,
-              </span>
-              <span class="author-block">
-                <a href="http://justinhart.net">Justin Hart</a><sup>2</sup>
-              </span>
-            </div>
+            <h1 class="title is-1 publication-title">Vid2Real</h1>
+            <h2 class="subtitle">A Human-Robot Encounters (HRE) Research Initiative</h2>
+            <h3 class="subtitle"><span class="dnerf">Vid2Real</span> is a <i>Human-Robot Encounters (HRE)</i> research
+              initiative at UT Austin, as part of a larger Growing Convergence Research (GCR) group funded by the NSF
+            </h3>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-            <div class="is-size-5 publication-authors">
-              <span class="author-block"><sup>1</sup>School of Information, UT Austin,</span><br>
-              <span class="author-block"><sup>2</sup>Department of Computer Science, UT Austin</span>
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h1 class="title is-3">Projects</h1>
+      <div class="columns is-multiline">
+        <!-- Project 1 -->
+        <div class="column is-full-width">
+          <div class="card project-card">
+            <div class="card-image">
+              <figure class="image is-4by3 is-hoverable">
+                <img src="static/images/vid2real_hri_logo.png" alt="Vid2RealHRI framework">
+              </figure>
             </div>
-
-            <div class="column has-text-centered">
-              <div class="publication-links">
-                <!-- PDF Link. -->
-                <span class="link-block">
-                  <a href="#" class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fas fa-file-pdf"></i>
-                    </span>
-                    <span class="is-size-6">Paper<br>(soon)</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="#" class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="ai ai-arxiv"></i>
-                    </span>
-                    <span class="is-size-6">arXiv<br>(soon)</span>
-                  </a>
-                </span>
-                <!-- Video Link.
-                <span class="link-block">
-                  <a href="https://www.youtube.com/watch?v=MrKrnHhk8IA"
-                    class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span>Video</span>
-                  </a>
-                </span> -->
-                <!-- Code Link. -->
-                <span class="link-block">
-                  <a href="#" class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-github"></i>
-                    </span>
-                    <span class="is-size-6">Code<br>(soon)</span>
-                  </a>
-                </span>
-                <!-- Dataset Link. -->
-                <span class="link-block">
-                  <a href="https://doi.org/10.18738/T8/KAHJIB"
-                    class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="fab fa-youtube"></i>
-                    </span>
-                    <span class="is-size-6">Video<br>Data</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="#" class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span class="is-size-6">Real World<br>Data (soon)</span>
-                  </a>
-                </span>
-                <span class="link-block">
-                  <a href="#" class="external-link button is-medium is-rounded is-dark">
-                    <span class="icon">
-                      <i class="far fa-images"></i>
-                    </span>
-                    <span class="is-size-6">In-the-wild<br>Data (soon)</span>
-                  </a>
-                </span>
+            <div class="card-content">
+              <div class="content">
+                <h3>Vid2RealHRI</h3>
+                <p class="subtitle">Align video-based HRI study designs with real-world
+                  settings</p>
+                <p>HRI research using autonomous robots in real-world
+                  settings can produce results with the highest ecological validity
+                  of any study modality, but many difficulties limit such studies'
+                  feasibility and effectiveness. We proposed <span class="dnerf">Vid2RealHRI</span>, a
+                  research framework to maximize real-world insights offered by
+                  video-based studies.</p>
+                <!-- <a href="#">Learn more</a> -->
               </div>
             </div>
+            <footer class="card-footer">
+              <a href="https://vid2real.github.io/vid2realHRI/" class="card-footer-item">Read More</a>
+            </footer>
           </div>
         </div>
+        <!-- Project 1 -->
       </div>
     </div>
   </section>
-
-
-  <!-- Framework -->
-  <section class="hero teaser">
-    <div class="container is-max-desktop">
-      <div class="hero-body">
-        <div class="has-text-centered">
-          <img src="./static/images/process_simple.png" style="max-width:100%;height:auto;">
-        </div>
-        <h2 class="subtitle has-text-centered">
-          The <span class="dnerf">Vid2RealHRI</span> end-to-end framework for transferring insights from video-based HRI
-          study designs into real-world settings.
-        </h2>
-      </div>
-    </div>
-  </section>
-  <!-- Framework -->
 
   <section class="section">
     <div class="container is-max-desktop">
-      <!-- Abstract. -->
-      <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Abstract</h2>
-          <div class="content has-text-justified">
-            <p>
-              HRI research using autonomous robots in real-world
-              settings can produce results with the highest ecological validity
-              of any study modality, but many difficulties limit such studies'
-              feasibility and effectiveness. We propose <span class="dnerf">Vid2RealHRI</span>, a
-              research framework to maximize real-world insights offered by
-              video-based studies.
-            </p>
-            <p>
-              The <span class="dnerf">Vid2RealHRI</span> framework was used
-              to design an online study using first-person videos of robots
-              as real-world encounter surrogates. The online study <i>(n = 385)</i>
-              distinguished the within-subjects effects of four robot behavioral
-              conditions on perceived social intelligence and human willingness
-              to help the robot enter an exterior door. A real-world, between-
-              subjects replication <i>(n = 26)</i> using two conditions confirmed the
-              validity of the online study's findings and the sufficiency of the
-              participant recruitment target <i>(22)</i> based on a power analysis of
-              online study results. The <span class="dnerf">Vid2RealHRI</span> framework offers HRI
-              researchers a principled way to take advantage of the efficiency
-              of video-based study modalities while generating directly transferable knowledge of real-world HRI.
-            </p>
-          </div>
-        </div>
-      </div>
-      <!--/ Abstract. -->
-
-      <!-- Paper video. -->
-      <!-- <div class="columns is-centered has-text-centered">
-        <div class="column is-four-fifths">
-          <h2 class="title is-3">Video</h2>
-          <div class="publication-video">
-            <iframe src="https://www.youtube.com/embed/MrKrnHhk8IA?rel=0&amp;showinfo=0" frameborder="0"
-              allow="autoplay; encrypted-media" allowfullscreen></iframe>
-          </div>
-        </div>
-      </div> -->
-      <!--/ Paper video. -->
-    </div>
-  </section>
-
-
-  <section class="hero is-light is-small">
-    <div class="hero-body">
-      <h2 class="columns title is-3 is-centered">Interventions</h2>
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel columns is-centered">
-          <div class="column">
-            <video autoplay controls muted loop playsinline style="width: 98%; height: auto;">
-              <source src="./static/videos/video_study/Baseline.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-justified is-size-6">
-              <b>Baseline:</b> robot stops at the entrance and waits for the nearby human to push the button, without
-              offering any indications that it needs assistance
-            </h2>
-          </div>
-          <div class="column">
-            <video autoplay controls muted loop playsinline style="width: 98%; height: auto;">
-              <source src="./static/videos/video_study/BL.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-justified is-size-6">
-              <b>Body-Language-only:</b> robot stops at the entrance and turns its head facing the nearby human, then
-              turns its head back to look at the door, then waits for the human to push the button
-            </h2>
-          </div>
-          <div class="column">
-            <video autoplay controls muted loop playsinline style="width: 98%; height: auto;">
-              <source src="./static/videos/video_study/Verbal.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-justified is-size-6">
-              <b>Verbal-only:</b> robot stops at the entrance and says, <em>"Excuse me, can you open the door for
-                me?"</em> to the nearby human, then waits for the human to push the button
-            </h2>
-          </div>
-          <div class="column">
-            <video autoplay controls muted loop playsinline style="width: 98%; height: auto;">
-              <source src="./static/videos/video_study/BL+V.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-justified is-size-6">
-              <b>Body-Language + Verbal:</b> robot stops at the entrance and turns its head facing the nearby human and
-              says, <em>"Excuse me, can you open the door for me?"</em>, then turns its head back to look at the door
-              and waits for the human to push the button
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- <section class="hero is-light is-small">
-    <div class="hero-body">
-      <h2 class="title is-3">Real-world study</h2>
-      <div class="container">
-        <div id="results-carousel" class="carousel results-carousel">
-          <div>
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/video_study/Baseline.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-              Baseline condition
-            </h2>
-          </div>
-          <div>
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/video_study/BL.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-              Body-Language-only condition
-            </h2>
-          </div>
-          <div>
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/video_study/Verbal.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-              Verbal-only condition
-            </h2>
-          </div>
-          <div>
-            <video poster="" id="steve" autoplay controls muted loop playsinline height="100%">
-              <source src="./static/videos/video_study/BL+V.mp4" type="video/mp4">
-            </video>
-            <h2 class="subtitle has-text-centered">
-              Body-Language + Verbal condition
-            </h2>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section> -->
-
-
-  <section class="section">
-    <div class="container is-max-desktop">
-
-      <!-- Video-Based Study. -->
-      <div class="columns is-centered">
-        <div class="column">
-          <div class="content">
-            <h2 class="title is-3">Video-Based Study</h2>
-            <p>
-              Video recording methodology followed to ensure consistency between different conditions. <span
-                class="dnerf">Speech</span> uses the python libraries (gTTs and pydub) to
-              produce audio from text on the fly. <span class="dnerf">Bodypose</span> uses pointcloud-based object
-              detection to
-              detect the observer and leverages the Clearpath Spot-ROS
-              wrapper (built upon Boston Dynamics API) to modify the
-              pose of the robot in a way that its head is "looking" at the
-              observer. <span class="dnerf">Motreplay</span> uses a recorded ROS-bagfile and republishes the
-              stream of motion commands required to generate identical
-              navigation motion for the robot.
-            </p>
-            <div class="has-text-centered">
-              <img src="./static/images/studyprep.png" style="max-width:100%;height:auto;">
+      <h1 class="title is-3">People</h1>
+      <div class="columns is-multiline">
+        <!-- Elliot Hauser -->
+        <div class="column is-4">
+          <div class="box has-text-centered">
+            <div class="person-image">
+              <img src="static/images/elliott.png" alt="Elliot Hauser">
             </div>
+            <h3 class="title is-5" href="https://elliotthauser.com">Elliot Hauser</h3>
+            <p>Assistant Professor, UT iSchool</p>
           </div>
         </div>
+        <!-- Elliot Hauser -->
+        <!-- Joydeep Biswas -->
+        <div class="column is-4">
+          <div class="box has-text-centered">
+            <div class="person-image">
+              <img src="static/images/joydeep.png" alt="Joydeep Biswas">
+            </div>
+            <h3 class="title is-5" href="https://www.joydeepb.com">Joydeep Biswas</h3>
+            <p>Associate Professor, UTCS</p>
+          </div>
+        </div>
+        <!-- Joydeep Biswas -->
+        <!-- Justin Hart -->
+        <div class="column is-4">
+          <div class="box has-text-centered">
+            <div class="person-image">
+              <img src="static/images/justin.png" alt="Justin Hart">
+            </div>
+            <h3 class="title is-5" href="http://justinhart.net">Justin Hart</h3>
+            <p>Assistant Professor of Practice, UTCS</p>
+          </div>
+        </div>
+        <!-- Justin Hart -->
+        <!-- Sadanand Modak -->
+        <div class="column is-4">
+          <div class="box has-text-centered">
+            <div class="person-image">
+              <img src="static/images/sadanand.png" alt="Sadanand Modak">
+            </div>
+            <h3 class="title is-5" href="https://www.semanticscholar.org/author/Sadanand-Modak/2274501520">Sadanand
+              Modak</h3>
+            <p>PhD 2nd year, UTCS</p>
+          </div>
+        </div>
+        <!-- Sadanand Modak -->
+        <!-- Yao-Cheng Chan -->
+        <div class="column is-4">
+          <div class="box has-text-centered">
+            <div class="person-image">
+              <img src="static/images/Yaochengchan.png" alt="Yao-Cheng Chan">
+            </div>
+            <h3 class="title is-5" href="https://www.semanticscholar.org/author/Yao-Cheng-Chan/1818227389">Yao-Cheng
+              Chan</h3>
+            <p>PhD 4th year, UT iSchool</p>
+          </div>
+        </div>
+        <!-- Yao-Cheng Chan -->
       </div>
-      <!-- Video-Based Study. -->
+    </div>
+  </section>
 
-      <!-- Concurrent Work. -->
-      <!-- <div class="columns is-centered">
-        <div class="column is-full-width">
-          <h2 class="title is-3">Related Links</h2>
+  <section class="section">
+    <div class="container">
+      <h1 class="title">Publications</h1>
+      <div class="content">
+        <ul>
+          <li>Elliot Hauser, Yao-Cheng Chan, Sadanand Modak, Joydeep Biswas, Justin Hart. (2024). "Vid2RealHRI: Align
+            video-based HRI study designs with real-world settings." <i>RO-MAN</i>, under review.</li>
+          <li>Yao-Cheng Chan, Elliot Hauser, Sadanand Modak, Joydeep Biswas, Justin Hart. (2024). "Perceived Social
+            Intelligence and Human Compliance in Human-Robot Encounters." <i>International Journal of Social
+              Robotics</i>, under review.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
 
-          <div class="content has-text-justified">
-            <p>
-              There's a lot of excellent work that was introduced around the same time as ours.
-            </p>
-            <p>
-              <a href="https://arxiv.org/abs/2104.09125">Progressive Encoding for Neural Optimization</a> introduces an
-              idea similar to our windowed position encoding for coarse-to-fine optimization.
-            </p>
-            <p>
-              <a href="https://www.albertpumarola.com/research/D-NeRF/index.html">D-NeRF</a> and <a
-                href="https://gvv.mpi-inf.mpg.de/projects/nonrigid_nerf/">NR-NeRF</a>
-              both use deformation fields to model non-rigid scenes.
-            </p>
-            <p>
-              Some works model videos with a NeRF by directly modulating the density, such as <a
-                href="https://video-nerf.github.io/">Video-NeRF</a>, <a
-                href="https://www.cs.cornell.edu/~zl548/NSFF/">NSFF</a>, and <a
-                href="https://neural-3d-video.github.io/">DyNeRF</a>
-            </p>
-            <p>
-              There are probably many more by the time you are reading this. Check out <a
-                href="https://dellaert.github.io/NeRF/">Frank Dellart's survey on recent NeRF papers</a>, and <a
-                href="https://github.com/yenchenlin/awesome-NeRF">Yen-Chen Lin's curated list of NeRF papers</a>.
-            </p>
-          </div>
-        </div>
-      </div> -->
-      <!--/ Concurrent Work. -->
-
+  <section class="section">
+    <div class="container is-max-desktop">
       <!-- Latest News -->
       <h1 class="title is-3">Latest News</h1>
       <div class="columns is-multiline">
         <div class="column is-one-third">
           <div class="card">
             <div class="card-content">
-              <p class="title is-4">Workshop Paper</p>
+              <p class="title is-4">Vid2RealHRI Workshop Paper</p>
               <p class="subtitle is-6">March 11, 2024</p>
               <p>Presented at the <i>Workshop YOUR Study Design!</i> workshop at HRI 2024.</p>
             </div>
@@ -410,7 +233,7 @@
         <div class="column is-one-third">
           <div class="card">
             <div class="card-content">
-              <p class="title is-4">Video Dataset Published</p>
+              <p class="title is-4">Vid2RealHRI Video Dataset Published</p>
               <p class="subtitle is-6">February 14, 2024</p>
               <p>Online video-based questionnaire and video data released on the Texas Data Repository.</p>
             </div>
@@ -421,23 +244,8 @@
         </div>
       </div>
       <!-- Latest News -->
-
-
-
     </div>
   </section>
-
-  <!-- <section class="section" id="BibTeX">
-    <div class="container is-max-desktop content">
-      <h2 class="title">BibTeX</h2>
-      <pre><code>@article{park2021nerfies,
-        author    = {Park, Keunhong and Sinha, Utkarsh and Barron, Jonathan T. and Bouaziz, Sofien and Goldman, Dan B and Seitz, Steven M. and Martin-Brualla, Ricardo},
-        title     = {Nerfies: Deformable Neural Radiance Fields},
-        journal   = {ICCV},
-        year      = {2021},}</code></pre>
-    </div>
-  </section> -->
-
 
   <footer class="footer">
     <div class="container">
